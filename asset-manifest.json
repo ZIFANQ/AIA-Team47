@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.becfb702.css",
-    "main.js": "/static/js/main.8b3b0858.js",
+    "main.js": "/static/js/main.f9b6e5fb.js",
     "static/media/joao.jpg": "/static/media/joao.9d1f22a652cd16703d23.jpg",
     "static/media/nir.png": "/static/media/nir.5be60648ae1b934ec154.png",
     "static/media/carina.jpg": "/static/media/carina.b1d280017e884786ef79.jpg",
@@ -80,11 +80,15 @@
     "static/media/direction.svg": "/static/media/direction.7feb3d2336d3133d67764adc61842c0d.svg",
     "static/media/wave.svg": "/static/media/wave.498b343ae547a16fb60020cd331533c3.svg",
     "static/media/circle.svg": "/static/media/circle.4a1161fdc48a5b390c545c7087db7d95.svg",
+    "static/media/insertionSortExp.md": "/static/media/insertionSortExp.31d6cfe0d16ae931b73c.md",
+    "static/media/insertionSortInfo.md": "/static/media/insertionSortInfo.31d6cfe0d16ae931b73c.md",
+    "static/media/selectionSortExp.md": "/static/media/selectionSortExp.31d6cfe0d16ae931b73c.md",
+    "static/media/selectionSortInfo.md": "/static/media/selectionSortInfo.31d6cfe0d16ae931b73c.md",
     "main.becfb702.css.map": "/static/css/main.becfb702.css.map",
-    "main.8b3b0858.js.map": "/static/js/main.8b3b0858.js.map"
+    "main.f9b6e5fb.js.map": "/static/js/main.f9b6e5fb.js.map"
   },
   "entrypoints": [
     "static/css/main.becfb702.css",
-    "static/js/main.8b3b0858.js"
+    "static/js/main.f9b6e5fb.js"
   ]
 }
