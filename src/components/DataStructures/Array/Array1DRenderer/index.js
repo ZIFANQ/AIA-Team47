@@ -336,48 +336,64 @@ function stackRenderer(stack, nodeCount, stackDepth, maxStackDepth) {
   }
   let stackItems = [];
   for (let i = 0; i < stack.length; i += 1) {
-    stackItems.push(
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        {stack[i].map(({ base, extra }, index) =>
-        (
-          <div
-            className={styles.stackElement}
-            style={{
-              width: `calc(100%/${nodeCount})`,
-              textAlign: 'center',
-              color: 'gray',
-              backgroundColor: stackFrameColour(base),
-            }}
-          >
-            {/* 
-                Stack Number Rendering:
-                - This JSX code renders corresponding numbers under the stack visualisation in 1D arrays, e.g., QuickSort.
-                - The feature is currently disabled. To re-enable:
-                  1. Uncomment the following JSX.
-                  2. Uncomment the `displayStackNumber` function in this file.
-                */}
-
-            {/* {(() => {
-              if (displayStackNumber(val, index, stack[i])) {
-                return <p style={{ fontSize: '13px' }}>{index}</p>;
-              }
-              return '';
-            })()} */}
-            {extra.map((extraColor) => (
-              <div
-                className={styles.stackSubElement}
-                style={{
-                  width: '100%',
-                  textAlign: 'center',
-                  backgroundColor: stackFrameColour(extraColor),
-                }}
-              />
-            ))}
-          </div>
-        )
-        )}
-      </div>,
-    );
+    // Filter out empty positions for a more compact display
+    const nonEmptyElements = stack[i]
+      .map((element, index) => ({ ...element, originalIndex: index }))
+      .filter(({ base }) => base !== 0); // 0 is STACK_FRAME_COLOR.No_color
+    
+    if (nonEmptyElements.length === 0) {
+      // If no elements to show, render an empty row
+      stackItems.push(
+        <div style={{ display: 'flex', height: '0.6em', marginBottom: 'min(1vh, 1em)' }} />
+      );
+    } else {
+      stackItems.push(
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'flex-start', 
+          alignItems: 'center',
+          gap: '2px',
+          height: '0.6em',
+          marginBottom: 'min(1vh, 1em)'
+        }}>
+          {nonEmptyElements.map(({ base, extra, originalIndex }) => (
+            <div
+              key={originalIndex}
+              className={styles.stackElement}
+              style={{
+                minWidth: '20px',
+                maxWidth: '40px',
+                width: `${Math.max(20, 300 / nodeCount)}px`,
+                textAlign: 'center',
+                color: 'gray',
+                backgroundColor: stackFrameColour(base),
+                position: 'relative',
+                borderRadius: '2px',
+              }}
+              title={`Position ${originalIndex}`}
+            >
+              {/* Show position number for reference */}
+              <span style={{ fontSize: '10px', color: 'white', fontWeight: 'bold' }}>
+                {originalIndex}
+              </span>
+              {extra.map((extraColor, extraIndex) => (
+                <div
+                  key={extraIndex}
+                  className={styles.stackSubElement}
+                  style={{
+                    width: '100%',
+                    height: '2px',
+                    backgroundColor: stackFrameColour(extraColor),
+                    position: 'absolute',
+                    bottom: '0',
+                  }}
+                />
+              ))}
+            </div>
+          ))}
+        </div>,
+      );
+    }
   }
 
 

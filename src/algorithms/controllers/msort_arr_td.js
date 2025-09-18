@@ -109,15 +109,57 @@ export function update_vis_with_stack_frame(a, stack_frame, stateVal) {
   let left, right, depth;
   [left, right, depth] = stack_frame;
 
-  for (let i = left; i <= right; i += 1) {
-    // each element in the vis stack is a tuple:
-    // 0th index is for base color,
-    // 1th index is for pivot, i, j colors
-    a[depth][i] = { base: stateVal, extra: [] };
+  // For merge sort, we want to show the range being processed more clearly
+  // Show a more compact representation that emphasizes the divide-and-conquer structure
+  
+  const segmentLength = right - left + 1;
+  
+  // Check if depth array exists and is properly initialized
+  if (!a[depth]) {
+    console.error(`Array at depth ${depth} is undefined!`);
+    return a;
   }
-  let mid = Math.floor((left + right) / 2);
-  // a[depth][mid] = { base: STACK_FRAME_COLOR.P_color, extra: [] };
-  a[depth][mid] = { base: STACK_FRAME_COLOR.Current_stackFrame, extra: [] };
+  
+  if (segmentLength === 1) {
+    // Base case: single element
+    if (left < a[depth].length) {
+      a[depth][left] = { base: stateVal, extra: [] };
+    }
+  } else if (segmentLength <= 3) {
+    // Small segments: show all elements
+    for (let i = left; i <= right; i += 1) {
+      if (i < a[depth].length) {
+        a[depth][i] = { base: stateVal, extra: [] };
+      }
+    }
+  } else {
+    // Larger segments: show strategic positions to indicate the range and split
+    
+    // Always show the boundaries
+    if (left < a[depth].length) {
+      a[depth][left] = { base: stateVal, extra: [] };
+    }
+    if (right < a[depth].length) {
+      a[depth][right] = { base: stateVal, extra: [] };
+    }
+    
+    // Show the split point with a different color
+    let mid = Math.floor((left + right) / 2);
+    if (mid < a[depth].length && mid !== left && mid !== right) {
+      a[depth][mid] = { base: STACK_FRAME_COLOR.P_color, extra: [] };
+    }
+    
+    // For very long segments, add one more position on each side of boundaries
+    if (segmentLength > 6) {
+      if (left + 1 < a[depth].length && left + 1 <= right) {
+        a[depth][left + 1] = { base: stateVal, extra: [] };
+      }
+      if (right - 1 >= 0 && right - 1 >= left && right - 1 < a[depth].length) {
+        a[depth][right - 1] = { base: stateVal, extra: [] };
+      }
+    }
+  }
+
   return a;
 }
 
@@ -144,33 +186,40 @@ const unhighlightB = (vis, index, isPrimaryColor = true) => {
 // ----------------------------------------------------------------------------------------------------------------------------
 
 
-// We hide array B entirely if things mergeCopy is collapsed
+// We hide array B entirely if mergeCopy is collapsed
+// When recursion is expanded, we show stack visualization
+// When merge is expanded, we show Array B
 export function initVisualisers() {
+  const visualizers = {
+    array: {
+      instance: new ArrayTracer('array', null, 'Array A', {
+        arrayItemMagnitudes: true,
+      }),
+      order: 0,
+    },
+  };
+
+  // Add Array B when merge operations are expanded
   if (isMergeCopyExpanded()) {
-    return {
-      array: {
-        instance: new ArrayTracer('array', null, 'Array A', {
-          arrayItemMagnitudes: true,
-        }),
-        order: 0,
-      },
-      arrayB: {
-        instance: new ArrayTracer('arrayB', null, 'Array B', {
-          arrayItemMagnitudes: true,
-        }),
-        order: 0,
-      },
-    }
-  } else {
-    return {
-      array: {
-        instance: new ArrayTracer('array', null, 'Array A', {
-          arrayItemMagnitudes: true,
-        }),
-        order: 0,
-      },
-    }
+    visualizers.arrayB = {
+      instance: new ArrayTracer('arrayB', null, 'Array B', {
+        arrayItemMagnitudes: true,
+      }),
+      order: 1,
+    };
   }
+  
+  // Always add Stack visualization - we'll control visibility through the refresh_stack function
+  // This ensures the stack visualizer is always available when needed
+  const stackLabel = isMergeCopyExpanded() ? 'Stack' : 'Array B/Stack';
+  visualizers.stack = {
+    instance: new ArrayTracer('stack', null, stackLabel, {
+      arrayItemMagnitudes: false,
+    }),
+    order: isMergeCopyExpanded() ? 2 : 1,
+  };
+
+  return visualizers;
 }
 
 /**
@@ -199,7 +248,7 @@ export function run_msort() {
     // Define helper functions
     // ----------------------------------------------------------------------------------------------------------------------------
 
-    function derive_stack(cur_real_stack, cur_finished_stack_frames, cur_i, cur_j, cur_pivot_index, cur_depth) {
+    function derive_stack(cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, cur_depth) {
       // return 2D array stack_vis containing color values corresponding to stack frame states and indexes in those stack frames
       // for visualise this data
 
@@ -215,6 +264,7 @@ export function run_msort() {
         );
       }
 
+      // First render finished stack frames (green)
       cur_finished_stack_frames.forEach((stack_frame) => {
         stack_vis = update_vis_with_stack_frame(
           stack_vis,
@@ -223,15 +273,19 @@ export function run_msort() {
         );
       });
 
-      cur_real_stack.forEach((stack_frame) => {
-        stack_vis = update_vis_with_stack_frame(
-          stack_vis,
-          stack_frame,
-          STACK_FRAME_COLOR.In_progress_stackFrame,
-        );
-      });
+      // Then render in-progress stack frames (yellow), but exclude the current one
+      if (cur_real_stack.length > 1) {
+        cur_real_stack.slice(0, -1).forEach((stack_frame) => {
+          stack_vis = update_vis_with_stack_frame(
+            stack_vis,
+            stack_frame,
+            STACK_FRAME_COLOR.In_progress_stackFrame,
+          );
+        });
+      }
 
-      if (cur_real_stack.length !== 0) {
+      // Finally render the current stack frame (red) - this should be on top
+      if (cur_real_stack.length > 0) {
         stack_vis = update_vis_with_stack_frame(
           stack_vis,
           cur_real_stack[cur_real_stack.length - 1],
@@ -239,72 +293,26 @@ export function run_msort() {
         );
       }
 
-      if (cur_depth === undefined) {
-        // return stack_vis;
-        return []; // clobber stack display for now
-      }
-
-      cur_pivot_index = Math.floor((cur_i + cur_j) / 2);
-      stack_vis[cur_depth][cur_pivot_index].extra.push(STACK_FRAME_COLOR.P_color);
-      if (cur_pivot_index !== undefined) {
-        // stack_vis[cur_depth][cur_pivot_index].extra.push(STACK_FRAME_COLOR.P_color);
-      }
-
-      if (!isMergeCopyExpanded()) { return stack_vis; }
-      // XXX clobber stack display for now
-      // if (!isMergeCopyExpanded()) { return []; }
-
-      if (cur_i !== undefined) {
-        // stack_vis[cur_depth][cur_i].extra.push(STACK_FRAME_COLOR.I_color);
-      }
-
-      if (cur_j !== undefined) {
-        // stack_vis[cur_depth][cur_j].extra.push(STACK_FRAME_COLOR.J_color);
-      }
-
       return stack_vis;
-      // return []; // XXX  clobber stack display for now
     }
 
-    const refresh_stack = (vis, cur_real_stack, cur_finished_stack_frames, cur_i, cur_j, cur_pivot_index, cur_depth) => {
-
-      // XXX left over from quicksort...
-      // We can't render the -1 index in the array
-      // For now we display i=0/j=0 at left of array if appropriate
-      let cur_i_too_low;
-      let cur_j_too_low;
-      if (cur_i === -1) {
-        cur_i = undefined;
-        cur_i_too_low = 0;
-      } else {
-        cur_i_too_low = undefined;
-      }
-      if (cur_j === -1) {
-        cur_j = undefined;
-        cur_j_too_low = 0;
-      } else {
-        cur_j_too_low = undefined;
-      }
+    const refresh_stack = (vis, cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, cur_depth) => {
 
       assert(vis.array);
       assert(cur_real_stack && cur_finished_stack_frames);
 
-      if (!isMergeCopyExpanded()) {
-        // j should not show up in vis if partition is collapsed
-        // cur_j = undefined;
-        // cur_j_too_low = undefined;
+      // Always show stack visualization - the improved version
+      const stackVis = derive_stack(cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, cur_depth);
+      
+      // If we have a separate stack visualizer, use it
+      if (vis.stack) {
+        vis.stack.setStackDepth(cur_real_stack.length);
+        vis.stack.setStack(stackVis);
+      } else {
+        // Fallback to array visualizer for stack
+        vis.array.setStackDepth(cur_real_stack.length);
+        vis.array.setStack(stackVis);
       }
-
-      if (!isMergeCopyExpanded() && !isRecursionExpanded()) {
-        // i should not show up in vis if partition + recursion is collapsed
-        // cur_i = undefined;
-        // cur_i_too_low = undefined;
-      }
-
-      vis.array.setStackDepth(cur_real_stack.length);
-      vis.array.setStack(
-        derive_stack(cur_real_stack, cur_finished_stack_frames, cur_i, cur_j, cur_pivot_index, cur_depth)
-      );
 
     };
 
@@ -402,9 +410,12 @@ export function run_msort() {
         for (let i = cur_left; i <= cur_right; i++) {
           highlight(vis, i, runAColor)
         }
-        // XXX give up on QS-like stack for now
-        // refresh_stack(vis, cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, 2, cur_depth);
-        set_simple_stack(vis.array, c_stk);
+        // Use improved stack visualization
+        refresh_stack(vis, cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, cur_depth);
+        // Keep simple stack as fallback for when recursion is collapsed
+        if (!isRecursionExpanded()) {
+          set_simple_stack(vis.array, c_stk);
+        }
       }, [A, B, left, right, depth, real_stack, finished_stack_frames,
         simple_stack], depth);
 
@@ -444,9 +455,14 @@ export function run_msort() {
         // recursive call once it has returned plus we need a chunk at
         // this level when the recursive code is collapsed
         chunker.add('sortL', (vis, a, cur_left, cur_mid, cur_right,
-          c_stk) => {
+          cur_real_stack, cur_finished_stack_frames, c_stk) => {
           vis.array.set(a, 'msort_arr_td');
-          set_simple_stack(vis.array, c_stk);
+          // Use improved stack visualization
+          refresh_stack(vis, cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, depth);
+          // Keep simple stack as fallback for when recursion is collapsed
+          if (!isRecursionExpanded()) {
+            set_simple_stack(vis.array, c_stk);
+          }
           assignVarToA(vis, 'left', cur_left);
           assignVarToA(vis, 'mid', cur_mid);
           assignVarToA(vis, 'right', cur_right);
@@ -457,7 +473,7 @@ export function run_msort() {
           for (let i = cur_mid + 1; i <= cur_right; i++) {
             highlight(vis, i, runBColor);
           }
-        }, [A, left, mid, right, simple_stack], depth);
+        }, [A, left, mid, right, real_stack, finished_stack_frames, simple_stack], depth);
 
         // dummy chunk before recursive call, as above
         chunker.add('preSortR', (vis, a, cur_left, cur_mid, cur_right) => {
@@ -477,9 +493,14 @@ export function run_msort() {
 
         // chunk after recursive call
         chunker.add('sortR', (vis, a, cur_left, cur_mid, cur_right,
-          c_stk) => {
+          cur_real_stack, cur_finished_stack_frames, c_stk) => {
           // vis.array.set(a, 'msort_arr_td');
-          set_simple_stack(vis.array, c_stk);
+          // Use improved stack visualization
+          refresh_stack(vis, cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, depth);
+          // Keep simple stack as fallback for when recursion is collapsed
+          if (!isRecursionExpanded()) {
+            set_simple_stack(vis.array, c_stk);
+          }
           assignVarToA(vis, 'left', cur_left);
           assignVarToA(vis, 'mid', cur_mid);
           assignVarToA(vis, 'right', cur_right);
@@ -491,7 +512,7 @@ export function run_msort() {
             // unhighlight(vis, i, true);
             highlight(vis, i, runBColor)
           }
-        }, [A, left, mid, right, simple_stack], depth);
+        }, [A, left, mid, right, real_stack, finished_stack_frames, simple_stack], depth);
 
         // XXX should we shorten psuedocode? eg, (ap1,max1) <- (left,mid)
         let ap1 = left;
@@ -500,18 +521,16 @@ export function run_msort() {
         let max2 = right;
         let bp = left;
 
-        chunker.add('ap1', (vis, a, cur_left, cur_mid, cur_right) => {
-          // disable stack display during merge: hopefully its not
-          // confusing, it avoids extra distraction and the position of
-          // the stack and array B can sometimes overlap:(
-          // vis.array.set(a, 'msort_arr_td');
-          set_simple_stack(vis.array, undefined);
+        chunker.add('ap1', (vis, a, cur_left, cur_mid, cur_right, 
+          cur_real_stack, cur_finished_stack_frames) => {
+          // Keep stack display during merge if recursion is expanded
+          refresh_stack(vis, cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, depth);
           if (isMergeExpanded()) {
             assignVarToA(vis, 'left', undefined);
             assignVarToA(vis, 'ap1', cur_left);
             highlight(vis, cur_left, apColor);
           }
-        }, [A, left, mid, right], depth);
+        }, [A, left, mid, right, real_stack, finished_stack_frames], depth);
         chunker.add('max1', (vis, a, cur_left, cur_mid, cur_right) => {
           if (isMergeExpanded()) {
             assignVarToA(vis, 'mid', undefined);
@@ -671,7 +690,7 @@ export function run_msort() {
           B[i] = undefined;
         }
         chunker.add('copyBA', (vis, a, b, cur_left, cur_mid,
-          cur_right, c_stk) => {
+          cur_right, c_stk, cur_real_stack, cur_finished_stack_frames) => {
           if (isMergeCopyExpanded()) {
             for (let i = cur_left; i <= cur_right; i++) {
               // unhighlightB(vis, i, false);
@@ -689,12 +708,14 @@ export function run_msort() {
             assignVarToA(vis, 'ap2', undefined);
             assignVarToA(vis, 'max2', undefined);
           }
+          // Update stack visualization - the stack frame will be moved to finished at the end of MergeSort function
+          refresh_stack(vis, cur_real_stack, cur_finished_stack_frames, cur_left, cur_right, depth);
           // XXX best highlight cur_mid+1..right from previous
           // recursion level?
           // for (let i = cur_mid+1; i <= right; i++) {
           // highlight(vis, i, true)
           // }
-        }, [A, B, left, mid, right, simple_stack], depth);
+        }, [A, B, left, mid, right, simple_stack, real_stack, finished_stack_frames], depth);
 
         // chunk after recursive call, as above, after adjusting
         // stack frames/depth etc
@@ -708,11 +729,19 @@ export function run_msort() {
             unhighlight(vis, cur_left, true);
             highlight(vis, cur_left, sortColor) // XXX check color
           }
-          // finished_stack_frames.push(real_stack.pop());
+          // Move the current stack frame to finished_stack_frames when this recursion level completes
+          finished_stack_frames.push(real_stack.pop());
         }, [A, left, right], depth);
       }
 
       simple_stack.shift();
+      
+      // Move the current stack frame to finished_stack_frames when this recursion level ends
+      // This ensures proper stack visualization as we return from recursion
+      if (real_stack.length > 0) {
+        finished_stack_frames.push(real_stack.pop());
+      }
+      
       return A; // Facilitates testing
     }
 
@@ -755,9 +784,18 @@ export function run_msort() {
       for (let i = 0; i < entire_num_array.length; i++) {
         highlight(vis, i, doneColor);
       }
+      // Clear the stack visualization when algorithm is complete
+      if (vis.stack) {
+        vis.stack.setStackDepth(0);
+        vis.stack.setStack([]);
+      } else {
+        vis.array.setStackDepth(0);
+        vis.array.setStack([]);
+      }
     }, [], 0);
 
     return msresult;
   }
 }
+
 
