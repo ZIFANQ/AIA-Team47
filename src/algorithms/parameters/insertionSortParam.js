@@ -20,6 +20,7 @@ const INSERTION_SORT_EXAMPLE = 'Please follow the example provided: 5,2,4,6,1,3'
 
 const UNCHECKED = { random: false, sortedAsc: false, bestCase: false, sortedDesc: false };
 
+// 生成“近乎有序”的数组：插入排序的理想输入
 function nearlySortedArray(n = 12, min = 1, max = 99, swaps = 2) {
   const arr = genRandNumList(n, min, max).sort((a, b) => (+a) - (+b));
   for (let s = 0; s < swaps; s += 1) {
@@ -35,7 +36,7 @@ const BlueRadio = withStyles({
   checked: {},
 })((props) => <Radio {...props} />);
 
-function InsertionSortParam({ list }) {
+function InsertionSortParam({ list }) { // 与 QuickSortParam 一致：URL 注入 list
   const [message, setMessage] = useState(null);
   const [array, setArray] = useState(list || DEFAULT_ARR);
   const { setNodes } = useContext(URLContext);

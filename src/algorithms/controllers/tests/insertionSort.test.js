@@ -12,7 +12,7 @@ const chunker = {
   add: () => {},
 };
 
-describe('insertionSort', () => {
+describe('quicksort', () => {
   it('sorts empty array', () => {
     expect(insertionSort.run(chunker, { nodes: [] })).toEqual([]);
   });

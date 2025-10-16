@@ -7,13 +7,12 @@ export default parse(`
         \\Code{
         Main
         InsertionSort(A, n) // Sort array A[1]..A[n] in ascending order. \\B 1
-        \\Expl{  Insertion Sort builds the sorted portion of the array one element at a time
-                by inserting each new element from the unsorted portion into its correct position 
-                among the previously sorted elements.
+        \\Expl{  Insertion Sort 维护左侧“已排序区”，将当前元素插入到正确位置。
+                 稳定、原地，适合小规模或近乎有序的输入。
         \\Expl}
         \\In{
             ForLoop(A, n)    \\Ref ForLoop
-            \\Expl{  Starting from the second element, insert each A[i] into the previously sorted section one by one.
+            \\Expl{  从第二个元素开始，逐个将 A[i] 插入到前面已排序区中。
             \\Expl}
         \\In}
         // Done \\B 20
@@ -22,11 +21,11 @@ export default parse(`
         \\Code{
         ForLoop
         for i <- 2 to n \\B 2
-        \\Expl{  Here, array indices start from 1; i=2 indicates the first element to be inserted.
+        \\Expl{  这里数组下标从 1 开始；i=2 表示第一个需要插入的元素。
         \\Expl}
         \\In{
             InsertPass(A, i)    \\Ref InsertPass
-            \\Expl{  Insert the element at position i into the correct position within A[1..i-1].
+            \\Expl{  将位置 i 的元素插入到 A[1..i-1] 的正确位置。
             \\Expl}
         \\In}
         \\Code}
@@ -34,23 +33,20 @@ export default parse(`
         \\Code{
         InsertPass
         key <- A[i] \\B 3
-        \\Expl{  Temporarily store the element to be inserted.
+        \\Expl{  暂存当前要插入的元素。
         \\Expl}
         j <- i - 1 \\B 4
-        \\Expl{  Use J as an indicator for searched part when searching the 
-                right position for the element picked from the unsorted portion.
+        \\Expl{  从已排序区的末尾开始比较并右移较大的元素。
         \\Expl}
         while j >= 1 and A[j] > key \\B 5
-        \\Expl{  Shift elements of the sorted subarray A[0..i-1] that are greater than key
-                one position to the right.
+        \\Expl{  只要左侧元素比 key 大，就右移它们给 key 腾位置。
         \\Expl}
         \\In{
             A[j+1] <- A[j] \\B 6
             j <- j - 1 \\B 7
         \\In}
         A[j+1] <- key \\B 8
-        \\Expl{  Place the key in its correct position in the sorted subarray, A[1..i] is sorted
-                next loop will start by doing the same thing on the next element of the unsorted portion. 
+        \\Expl{  将 key 放入空出的位置；到此 A[1..i] 再次有序。
         \\Expl}
         \\Code}
 `);

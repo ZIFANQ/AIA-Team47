@@ -6,9 +6,378 @@
   <component name="ChangeListManager">
     <list default="true" id="d972e117-1f6a-4c65-83bd-0128f76b985f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-multiwaytree.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-multiwaytree.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addNewAlgorithm.js" beforeDir="false" afterPath="$PROJECT_DIR$/addNewAlgorithm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Note" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Note" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Real/Real.tex" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Real/Real.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Real/cleanreal" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Real/cleanreal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prettier.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/prettier.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AlgorithmSelection.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlgorithmSelection.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BorderResize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BorderResize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputParam.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputParam.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/AStar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/AStar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/AVLTree.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/AVLTree.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/AVLTreeInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/AVLTreeInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/AVLTreeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/AVLTreeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/BFS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/BFS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/BSTrec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/BSTrec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/DFS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/DFS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/DFSrec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/DFSrec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/HashingChainingInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/HashingChainingInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/HashingCommon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/HashingCommon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/HashingDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/HashingDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/HashingInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/HashingInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/HashingSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/HashingSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/MSDRadixSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/MSDRadixSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/MSDRadixSort.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/MSDRadixSort.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/README_graph_search" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/README_graph_search" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/TTFTreeInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/TTFTreeInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/TTFTreeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/TTFTreeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/binaryTreeInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/binaryTreeInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/binaryTreeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/binaryTreeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/bruteForceStringSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/bruteForceStringSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/collapseChunkPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/collapseChunkPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/convexHullColours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/convexHullColours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/dijkstra.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/dijkstra.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/graphSearchColours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/graphSearchColours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/gwrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/gwrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/heapSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/heapSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/horspoolStringSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/horspoolStringSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/insertionSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/insertionSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/isort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/isort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/kruskal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/kruskal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/msort_arr_bup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/msort_arr_bup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/msort_arr_nat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/msort_arr_nat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/msort_arr_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/msort_arr_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/msort_list_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/msort_list_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/msort_lista_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/msort_lista_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/msort_shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/msort_shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/prim.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/prim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/prim_old.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/prim_old.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/quickSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/quickSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/quickSortM3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/quickSortM3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/quickSort_shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/quickSort_shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/selectionSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/selectionSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/sorts.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/sorts.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/straightRadixSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/straightRadixSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/straightRadixSort.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/straightRadixSort.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/HashingDeletion.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/HashingDeletion.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/HashingInsertion.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/HashingInsertion.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/HashingSearch.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/HashingSearch.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/TTFTree.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/TTFTree.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/binaryTreeInsertion.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/binaryTreeInsertion.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/binaryTreeSearch.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/binaryTreeSearch.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/heapSort.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/heapSort.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/insertionSort.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/insertionSort.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/prim.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/prim.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/prim_old.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/prim_old.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/quickSort.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/quickSort.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/selectionSort.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/selectionSort.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/transitiveClosure.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/transitiveClosure.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/tests/unionFind.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/tests/unionFind.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/transitiveClosure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/transitiveClosure.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/transitiveClosureCollapseChunkPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/transitiveClosureCollapseChunkPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/unionFindFind.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/unionFindFind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/controllers/unionFindUnion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/controllers/unionFindUnion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/ASTExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/ASTExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/AVLExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/AVLExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/BFSExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/BFSExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/BFSSExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/BFSSExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/BSTExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/BSTExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/BSTrec.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/BSTrec.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/DFSExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/DFSExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/DFSrecExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/DFSrecExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/DIJKExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/DIJKExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/HSExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/HSExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/HSSExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/HSSExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/HashingExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/HashingExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/KRUSKALExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/KRUSKALExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/MSDRadixSortExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/MSDRadixSortExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/PRIMExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/PRIMExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/PRIM_oldExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/PRIM_oldExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/QSExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/QSExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/QSM3Exp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/QSM3Exp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/StraightRadixSortExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/StraightRadixSortExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/TCExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/TCExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/TTFExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/TTFExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/UFExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/UFExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/gwrap.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/gwrap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/insertionSortExp.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/insertionSortExp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/isort.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/isort.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/msort_arr_bup.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/msort_arr_bup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/msort_arr_nat.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/msort_arr_nat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/msort_arr_td.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/msort_arr_td.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/msort_list_td.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/msort_list_td.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/explanations/msort_lista_td.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/explanations/msort_lista_td.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/ASTInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/ASTInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/AVLInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/AVLInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/BFSInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/BFSInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/BFSSInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/BFSSInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/BSTInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/BSTInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/BSTrec.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/BSTrec.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/DFSInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/DFSInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/DFSrecInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/DFSrecInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/DIJKInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/DIJKInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/HSInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/HSInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/HSSInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/HSSInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/HashingInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/HashingInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/InfoComment" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/InfoComment" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/KRUSKALInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/KRUSKALInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/MSDRadixSortInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/MSDRadixSortInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/PRIMInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/PRIMInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/PRIM_oldInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/PRIM_oldInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/QSInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/QSInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/QSM3Info.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/QSM3Info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/StraightRadixSortInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/StraightRadixSortInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/TCInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/TCInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/TTFInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/TTFInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/UFInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/UFInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/gwrap.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/gwrap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/insertionSortInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/insertionSortInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/isort.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/isort.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/msort_arr_bup.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/msort_arr_bup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/msort_arr_nat.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/msort_arr_nat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/msort_arr_td.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/msort_arr_td.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/msort_list_td.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/msort_list_td.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/msort_lista_td.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/msort_lista_td.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/extra-info/selectionSortInfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/extra-info/selectionSortInfo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/instructions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/instructions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/ASTParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/ASTParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/AVLTreeParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/AVLTreeParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/BFSParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/BFSParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/BFSSParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/BFSSParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/BSTParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/BSTParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/BSTrec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/BSTrec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/ButtonClickTrigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/ButtonClickTrigger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/DFSParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/DFSParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/DFSrecParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/DFSrecParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/DIJKParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/DIJKParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/HSParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/HSParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/HSSParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/HSSParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/HashingCHParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/HashingCHParam.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/HashingDHParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/HashingDHParam.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/HashingLPParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/HashingLPParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/KRUSKALParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/KRUSKALParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/MSDRadixSortParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/MSDRadixSortParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/PRIMParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/PRIMParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/PRIM_oldParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/PRIM_oldParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/QSM3Param.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/QSM3Param.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/QSParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/QSParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/StraightRadixSortParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/StraightRadixSortParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/TCParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/TCParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/TTFTreeParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/TTFTreeParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/UFParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/UFParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/gwrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/gwrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/EditableCell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/EditableCell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/EuclideanMatrixParams.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/EuclideanMatrixParams.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ListParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ListParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/MatrixParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/MatrixParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ParamForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ParamForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ParamHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ParamHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ParamMsg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/ParamMsg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/SingleValueParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/SingleValueParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/StringParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/StringParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/StringParamForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/StringParamForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/Table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/urlHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/urlHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/helpers/urlHelpers.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/helpers/urlHelpers.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/insertionSortParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/insertionSortParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/isort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/isort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/msort_arr_bup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/msort_arr_bup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/msort_arr_nat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/msort_arr_nat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/msort_arr_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/msort_arr_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/msort_list_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/msort_list_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/msort_lista_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/msort_lista_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/parameters/selectionSortParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/parameters/selectionSortParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/AStar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/AStar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/AVLTreeInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/AVLTreeInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/AVLTreeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/AVLTreeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/BFS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/BFS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/BSTrec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/BSTrec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/DFS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/DFS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/DFSrec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/DFSrec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/HashingInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/HashingInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/HashingSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/HashingSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/MSDRadixSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/MSDRadixSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/TTFTreeInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/TTFTreeInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/TTFTreeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/TTFTreeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/avltree.real" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/avltree.real" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/binaryTreeInsertion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/binaryTreeInsertion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/binaryTreeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/binaryTreeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/bruteForceStringSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/bruteForceStringSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/dijkstra.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/dijkstra.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/gwrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/gwrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/gwrap.real" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/gwrap.real" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/hash_chain.real" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/hash_chain.real" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/hash_lp.real" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/hash_lp.real" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/heapSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/heapSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/horspoolStringSearching.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/horspoolStringSearching.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/insertionSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/insertionSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/isort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/isort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/isort.real" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/isort.real" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/kruskal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/kruskal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_arr_bup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_arr_bup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_arr_nat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_arr_nat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_arr_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_arr_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_list_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_list_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_lista_td.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/msort_lista_td.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/prim.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/prim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/prim_old.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/prim_old.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/quickSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/quickSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/quickSortM3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/quickSortM3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/selectionSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/selectionSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/selsort.real" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/selsort.real" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/straightRadixSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/straightRadixSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/transitiveClosure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/transitiveClosure.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/unionFindFind.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/unionFindFind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/pseudocode/unionFindUnion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/pseudocode/unionFindUnion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/DISABLED.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/DISABLED.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/ENABLED.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ENABLED.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/AppSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/AppSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/ClientSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/ClientSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Contribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Contribute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Professor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Professor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/ProjectDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/ProjectDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Team2021s2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Team2021s2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/TeamMember.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/TeamMember.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/about.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AlgorithmMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AlgorithmMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/Array1DRenderer/Array1DRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/Array1DRenderer/Array1DRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/Array1DRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/Array1DRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/Array1DTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/Array1DTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/Array2DRenderer/Array2DRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/Array2DRenderer/Array2DRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/Array2DRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/Array2DRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/Array2DTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/Array2DTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray1DTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray1DTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray2DRenderer/TwoArray2DRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray2DRenderer/TwoArray2DRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray2DRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray2DRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray2DTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Array/TwoArray2DTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/ArrayGraph/ArrayGraphRenderer/ArrayGraphRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/ArrayGraph/ArrayGraphRenderer/ArrayGraphRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/ArrayGraph/ArrayGraphRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/ArrayGraph/ArrayGraphRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/ArrayGraph/ArrayGraphTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/ArrayGraph/ArrayGraphTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRenderer/GraphRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRenderer/GraphRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRenderer/GraphRenderer2.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRenderer/GraphRenderer2.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRendererRect/GraphRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRendererRect/GraphRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRendererRect/GraphRenderer2.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRendererRect/GraphRenderer2.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRendererRect/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphRendererRect/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphTracerRect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/GraphTracerRect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeRenderer/NAryTreeRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeRenderer/NAryTreeRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeTracer/NAryTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeTracer/NAryTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeTracer/NAryTreeVariable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeTracer/NAryTreeVariable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeTracer/NTreeTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Graph/NAryTreeTracer/NTreeTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Mask/BinaryRenderer/BinaryRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Mask/BinaryRenderer/BinaryRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Mask/BinaryRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Mask/BinaryRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Mask/MaskRenderer/MaskRenderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Mask/MaskRenderer/MaskRenderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Mask/MaskRenderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Mask/MaskRenderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/Mask/MaskTracer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/Mask/MaskTracer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/Ellipsis/Ellipsis.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/Ellipsis/Ellipsis.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/Ellipsis/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/Ellipsis/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/Renderer/Renderer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/Renderer/Renderer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/Renderer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/Renderer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/Tracer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/Tracer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/dimensions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/dimensions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/stylesheet/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataStructures/common/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataStructures/common/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/ControlButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/ControlButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/left-panel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/left-panel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainmenu/GraphAlgorithms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainmenu/GraphAlgorithms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainmenu/InsertSearchAlgorithms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainmenu/InsertSearchAlgorithms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainmenu/SetAlgorithms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainmenu/SetAlgorithms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainmenu/SortingAlgorithms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainmenu/SortingAlgorithms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainmenu/StringSearchAlgorithms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainmenu/StringSearchAlgorithms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainmenu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainmenu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mid-panel/ControlPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mid-panel/ControlPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mid-panel/Instruction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mid-panel/Instruction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mid-panel/ProgressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mid-panel/ProgressBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mid-panel/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mid-panel/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mid-panel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mid-panel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mid-panel/urlCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mid-panel/urlCreator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/BottomButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/BottomButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/Explanation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/Explanation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/ExtraInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/ExtraInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/HeaderButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/HeaderButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/Instructions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/Instructions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/LineExplanation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/LineExplanation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/LineNumHighLight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/LineNumHighLight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/MarkdownKeywords.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/MarkdownKeywords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/Pseudocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/Pseudocode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/right-panel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/right-panel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/top/Checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/top/Checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/top/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/top/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/top/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/top/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/top/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/top/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/GlobalState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/GlobalState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/actions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/actions.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/chunker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/chunker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/urlState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/urlState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/useInterval.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/useInterval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/useParam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/useParam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/markdown/code-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/markdown/code-block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pseudocode/findBookmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pseudocode/findBookmark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pseudocode/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pseudocode/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pseudocode/parse.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pseudocode/parse.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/About.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/AlgorithmMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/AlgorithmMenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Checkbox.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Checkbox.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/ControlButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ControlButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/ControlPanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ControlPanel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/EuclideanMatrix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/EuclideanMatrix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/GraphAlgorithms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/GraphAlgorithms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/InsertSearchAlgorithms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/InsertSearchAlgorithms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Instruction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Instruction.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/LeftPanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/LeftPanel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/LineNumHighLight.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/LineNumHighLight.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Matrix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Matrix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/MidPanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/MidPanel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Param.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Param.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/ProgressBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ProgressBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/RightPanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/RightPanel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/SetAlgorithms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/SetAlgorithms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/SortingAlgorithms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/SortingAlgorithms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/StringSearchAlgorithms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/StringSearchAlgorithms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mainmenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mainmenu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +395,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2lpNwMEtCXH3aoSNxw3UXU0mWtn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,12 +406,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.insertionSort.js.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "wes__update__instructions",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "zwo",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/lawrence/Desktop/AIA-Team47",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,7 +436,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725873310585</updated>
+      <workItem from="1759039094784" duration="6059000" />
+      <workItem from="1760049550698" duration="168000" />
+      <workItem from="1760049756768" duration="176000" />
+      <workItem from="1760050661616" duration="1373000" />
+      <workItem from="1760271700464" duration="690000" />
+      <workItem from="1760326675977" duration="37484000" />
+      <workItem from="1760594609274" duration="5040000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-// used to display one array in the form of a single bar chart, such as 
+// used to display one array in the form of a single bar chart, such as
 // Binary Search Tree
 // Heap Sort
 // Merge Sort
@@ -20,11 +20,46 @@ class Array1DTracer extends Array2DTracer {
   init() {
     super.init();
     this.chartTracer = null;
+
+    this.columnGapAt = null;
+    this.indexAfterGap = 'temp';
+  }
+
+  /**
+   * @param {number|null} idx
+   * @param {string} label
+   */
+  setGap(idx, label = 'temp') {
+    this.columnGapAt = Number.isInteger(idx) ? idx : null;
+    this.indexAfterGap = label;
+
+    if (this.renderer) {
+      this.renderer.columnGapAt = this.columnGapAt;
+      this.renderer.indexAfterGap = this.indexAfterGap;
+    }
+    if (this.instance && this.instance.renderer) {
+      this.instance.renderer.columnGapAt = this.columnGapAt;
+      this.instance.renderer.indexAfterGap = this.indexAfterGap;
+    }
+  }
+
+  clearGap() {
+    this.setGap(null, 'temp');
   }
 
   set(array1d = [], algo) {
     const array2d = [array1d];
     super.set(array2d, algo);
+
+    if (this.renderer) {
+      this.renderer.columnGapAt = this.columnGapAt;
+      this.renderer.indexAfterGap = this.indexAfterGap;
+    }
+    if (this.instance && this.instance.renderer) {
+      this.instance.renderer.columnGapAt = this.columnGapAt;
+      this.instance.renderer.indexAfterGap = this.indexAfterGap;
+    }
+
     this.syncChartTracer();
   }
 
@@ -83,6 +118,11 @@ class Array1DTracer extends Array2DTracer {
 
   // Swaps two elements in 1D array
   swapElements(x, y) {
+    if (!this.data || !this.data[0]) return;
+    if (!Number.isInteger(x) || !Number.isInteger(y)) return;
+    if (x < 0 || x >= this.data[0].length) return;
+    if (y < 0 || y >= this.data[0].length) return;
+
     const temp1 = { ...this.data[0][x], variables: this.data[0][y].variables };
     const temp2 = { ...this.data[0][y], variables: this.data[0][x].variables };
     this.data[0][x] = temp2;
@@ -91,11 +131,16 @@ class Array1DTracer extends Array2DTracer {
 
   // Adds variable to specific element in array
   addVariable(v, sx) {
+    if (!this.data || !this.data[0]) return;
+    if (!Number.isInteger(sx) || sx < 0 || sx >= this.data[0].length) return;
+    if (this.columnGapAt !== null && sx === this.columnGapAt) return;
+
     this.data[0][sx].variables.push(v);
   }
 
   // Removes value from array
   removeVariable(v) {
+    if (!this.data || !this.data[0]) return;
     for (let y = 0; y < this.data[0].length; y++) {
       const newVars = this.data[0][y].variables.filter((val) => val !== v);
       this.data[0][y].variables = newVars;
@@ -104,6 +149,7 @@ class Array1DTracer extends Array2DTracer {
 
   // Remove all variables from array
   clearVariables() {
+    if (!this.data || !this.data[0]) return;
     for (let y = 0; y < this.data[0].length; y++) {
       this.data[0][y].variables = [];
     }
@@ -111,6 +157,8 @@ class Array1DTracer extends Array2DTracer {
 
   // Removes "variable" from all elements in the array and assigns new "variable" to a specificed index
   assignVariable(v, idx) {
+    if (!this.data || !this.data[0]) return;
+
     // deep clone data so that changes to this.data are all made at the same time which will allow for tweening
     function customizer(val) {
       if (val instanceof Element) {
@@ -140,8 +188,13 @@ class Array1DTracer extends Array2DTracer {
     }
 
     // add variable to item if not undefined or null
-    if (idx !== null && idx !== undefined)
-      newData[0][idx].variables.push(v);
+    if (idx !== null && idx !== undefined) {
+      if (Number.isInteger(idx) && idx >= 0 && idx < newData[0].length) {
+        if (!(this.columnGapAt !== null && idx === this.columnGapAt)) {
+          newData[0][idx].variables.push(v);
+        }
+      }
+    }
 
     // update this.data
     this.data = newData;
@@ -154,7 +207,6 @@ class Array1DTracer extends Array2DTracer {
   setStackDepth(depth) {
     this.stackDepth = depth;
   }
-
 
   // default is to compute largestColumnValue but we can set it
   // explicitly so we can make two arrays look the same when moving
@@ -169,3 +221,11 @@ class Array1DTracer extends Array2DTracer {
 }
 
 export default Array1DTracer;
+
+
+
+
+
+
+
+

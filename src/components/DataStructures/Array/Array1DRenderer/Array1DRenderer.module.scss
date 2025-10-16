@@ -89,6 +89,24 @@
             }
         }
 
+        .gapCell {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 4px;
+            margin-right: 4px;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        .gapLabel {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 4px;
+            margin-right: 4px;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
         .col { // column (within a row, ie an array element)
             justify-content: center;
             align-items: center;
@@ -240,3 +258,4 @@
         }
     }
 }
+

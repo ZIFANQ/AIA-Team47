@@ -1,63 +1,39 @@
 <style>
-
 a:link {
-
     color: #1e28f0;
-
 }
-
 a:visited{
-
     color: #3c1478;
-
 }
-
 a:hover{
-
     color: #1e288c;
-
 }
-
 </style>
 
-
-
-## Extra lnfo
-
-
+## Extra Info
 
 -----
 
-
-
 Geeks for Geeks Link: [**Insertion Sort**][G4GLink]
 
-
-
-[G4GLink]: https://www.geeksforgeeks.org/dsa/insertion-sort-algorithm/
-
-
+[G4GLink]: https://www.geeksforgeeks.org/insertion-sort/
 
 ## Exercises/Exploration
 
+Insertion sort works very efficiently on small or **nearly sorted** lists. Try it on:
+- A fully sorted list
+- A reversed list
+- A list where only a few elements are out of order
 
+Measure the number of comparisons and shifts (not swaps!) required in each case. What do you notice?
 
-Compare lnsertion Sort with Merge Sort.
+Insertion sort is often used in hybrid sorting algorithms (like Timsort) for small subarrays — why might this be a good idea?
 
-	-Why is lnsertion Sort often preferred for very small subarrays inside Merge Sort implementations?
+Modify the insertion sort to sort in **descending** order instead of ascending. What changes are needed?
 
-	-How does the asymptotic complexity differ between the two?
+What is the **worst-case** input for insertion sort, and why does it happen?
 
-
-
-Try tracing lnsertion Sort on an array of size 6-8 that is reverse-sorted.
-
-	-How many shifts (element moves) are required in total?
-
-	-How does this compare to the number of comparisons?
-
-Think about the adaptiveness of insertion Sort.
-
-	-Why does Insertion Sort work particularly well on nearly sorted arrays?
-
-	-Can you identify a real-world dataset where this property would be beneficial?
+Explore how insertion sort behaves compared to bubble sort and selection sort in:
+- Best/worst/average case complexity
+- Number of writes to the array
+- Usefulness in real-world scenarios
